@@ -9,13 +9,14 @@ Unfortunately, this script must first be ran manually before it can be put on a 
 This script also requires a Spotify developer account to be created that is attached to your Spotify account, so that you can get a Spotify Client ID & Secret to use in the requests.
 
 ## Setup
-Create a `.env` file in the source directory that contains the following keys:
+1. Create your Spotify developer account and retrieve the client_id and secret. https://developer.spotify.com/
 
-* SPOTIPY_CLIENT_ID=uuid
-* SPOTIPY_CLIENT_SECRET=uuid
-* SPOTIPY_REDIRECT_URI=http://localhost:9091/callback
+2. Create a `.env` file in the source directory that contains the following keys:
 
-* SHUFFLE_PLAYLIST_IDS='["uuid", "uuid"]'
+    * SPOTIPY_CLIENT_ID=uuid
+    * SPOTIPY_CLIENT_SECRET=uuid
+    * SPOTIPY_REDIRECT_URI=http://localhost:9091/callback
+    * SHUFFLE_PLAYLIST_IDS='["uuid", "uuid"]'
 
 # Run
 Simply run this script like any other Pyton script: `python shuffler.py` and it will execute :)
